@@ -1,0 +1,389 @@
+@media (max-width: 1200px) {
+  .header {
+    background: url(../images/header-bg.png) 246% 77% no-repeat, linear-gradient(to right, #fff9f2 67%, #fdb827 33%);
+    &__top {
+      max-width: 1024px;
+    }
+  }
+  .product {
+    padding: 50px 0;
+    &__list {
+      justify-content: center;
+      margin-right: 0;
+    }
+    &__item {
+      margin-left: 28px;
+    }
+  }
+  .description {
+    &__photo-inner {
+      justify-content: center;
+    }
+    &__photo-box:last-child {
+      display: none;
+    }
+  }
+  .about {
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .reviews {
+    padding: 40px 0 130px;
+    &__item-second {
+      left: 165px;
+    }
+    &__item-third {
+      left: 230px;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+  }
+  .footer {
+    padding: 80px 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .menu__link{
+    color: #fff;
+  }
+  .menu__list {
+    position: fixed;
+    display: block;
+    z-index: 4;
+    padding-left: 0;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fdb827;
+    padding: 115px 23px 20px;
+    transition: all 0.3s ease;
+    overflow: auto;
+  }
+  .menu__list.active {
+    top: 0;
+  }
+  .menu__item {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 0 10px 0;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    a {
+      font-size: 24px;
+    }
+  }
+  .header {
+    background: url(../images/header-bg.png) 169% 72%/60% no-repeat, linear-gradient(to right, #fff9f2 72%, #fdb827 33%);
+    &__inner {
+      max-width: 768px;
+    }
+    &__burger {
+      z-index: 5;
+      order: 1;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+    }
+    &__burger::before,
+    &__burger::after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+    &__burger::before {
+      top: 0;
+    }
+    &__burger::after {
+      bottom: 0;
+    }
+    &__burger span {
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease;
+    }
+    &__burger.active span {
+      transform: scale(0);
+    }
+    &__burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    &__logo {
+      z-index: 5;
+    }
+    &__contact-inner {
+      z-index: 5;
+    }
+    &__top {
+      max-width: 768px;
+    }
+  }
+  .product {
+    padding: 10px 0;
+    &__title {
+      padding: 18px 0 30px;
+    }
+  }
+  .description {
+    padding: 20px 0;
+  }
+  .about {
+    padding: 120px 0;
+  }
+  .reviews {
+    padding: 10px 0 100px;
+    &__item-second {
+      left: 33px;
+    }
+    &__item-third {
+      left: 88px;
+    }
+  }
+  .footer {
+    padding: 40px 0;
+    &__text {
+      max-width: 200px;
+    }
+    &__top {
+      padding-bottom: 20px;
+    }
+    &__top-subtitle{
+      pointer-events: all;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .header {
+    background-position-y: 87%;
+    &__contact-inner {
+      top: -115%;
+      left: 80px;
+      position: fixed;
+      padding: 0;
+      transition: all 0.3s;
+    }
+    &__contact-inner.active {
+      top: 370px;
+      display: flex;
+    }
+    &__title {
+      font-size: 50px;
+      max-width: 300px;
+    }
+    &__text {
+      max-width: 299px;
+    }
+  }
+  .product {
+    &__item img {
+      margin-bottom: 12px;
+    }
+    .item__subtitle {
+      margin-bottom: 15px;
+    }
+  }
+  .description {
+    &__photo-inner {
+      display: none;
+    }
+  }
+  .about {
+    background-position: -65% top;
+    padding: 30px 0 80px 0;
+    &__image {
+      display: none;
+    }
+  }
+  .reviews {
+    padding: 20px 0 50px;
+    &__item-second,
+    &__item-third {
+      width: 0;
+    }
+    cite {
+      padding-right: 20px;
+    }
+    &__title {
+      margin-top: 0;
+    }
+    &__item {
+      min-height: 300px;
+      blockquote {
+        margin-bottom: 25px;
+        font-size: 14px;
+        padding: 0 15px;
+      }
+    }
+    &__author {
+      max-width: 100%;
+      justify-content: space-evenly;
+      padding-left: 40px;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      li {
+        &.slick-active {
+          background-color: #fdb827;
+        }
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.233);
+        background-color: #1a9fec;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 20px 0;
+    &__top {
+      flex-direction: column;
+    }
+    &__top-item {
+      margin-bottom: 15px;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    &__top-title,
+    &__top-subtitle {
+      margin-bottom: 15px;
+    }
+    &__address {
+      max-width: 100%;
+    }
+    &__top-item.hidden {
+      .footer__list {
+        display: none;
+      }
+      .footer__address {
+        display: none;
+      }
+      .footer__text {
+        display: none;
+      }
+    }
+    &__bottom {
+      padding: 15px 0 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__contact-inner {
+      left: 15%;
+    }
+    &__text{
+      max-width: 264px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .title{ 
+    font-size: 36px;
+  }
+  .header {
+    background: linear-gradient(to right, #fff9f2 72%, #fdb827 33%);
+    &__contact-inner {
+      left: 10%;
+    }
+    &__title {
+      font-size: 40px;
+      max-width: 250px;
+    }
+    &__text {
+      max-width: 234px;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+  .reviews{
+    &__author{
+      padding-left: 0;
+    }
+  }
+  .footer{
+    &__copy{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-height: 420px){
+  .title{
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  .header{
+    &__top{
+      padding: 25px 0;
+    }
+    &__title{
+      font-size: 34px;
+      max-width: 425px;
+      margin-bottom: 15px;
+    }
+    &__text{
+      margin-bottom: 10px;
+    }
+  }
+  .product{
+    &__item{
+      margin-right: 10px;
+    }
+  }
+  .about{
+    background-position: 300px top;
+    padding: 50px 0;
+  }
+  .reviews{
+    &__item-second,
+    &__item-third{
+      width: 0;
+    }
+  }
+  .footer{
+    &__text{
+      max-width: 160px;
+    }
+    &__address{
+      max-width: 115px;
+    }
+  }
+}

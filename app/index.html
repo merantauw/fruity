@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,477 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
 
+<body>
+  <div class="header__top">
+    <div class="container header__container">
+      <nav class="header__inner">
+        <a class="header__logo" href="#">
+          <img class="logo" src="images/logo.png" alt="logo">
+        </a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#home" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#categories" class="menu__link">Categories</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">About Us</a>
+          </li>
+        </ul>
+
+        <div class="header__contact-inner">
+          <button class="header__btn-contact">
+            Contact Us
+          </button>
+          <button class="header__btn-shop">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.27274 20.0909C8.77482 20.0909 9.18183 19.6839 9.18183 19.1818C9.18183 18.6797 8.77482 18.2727 8.27274 18.2727C7.77066 18.2727 7.36365 18.6797 7.36365 19.1818C7.36365 19.6839 7.77066 20.0909 8.27274 20.0909Z"
+                stroke="#FF800B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M18.2727 20.0909C18.7748 20.0909 19.1818 19.6839 19.1818 19.1818C19.1818 18.6797 18.7748 18.2727 18.2727 18.2727C17.7707 18.2727 17.3636 18.6797 17.3636 19.1818C17.3636 19.6839 17.7707 20.0909 18.2727 20.0909Z"
+                stroke="#FF800B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M1 1H4.63636L7.07273 13.1727C7.15586 13.5913 7.38355 13.9672 7.71595 14.2348C8.04835 14.5024 8.46427 14.6445 8.89091 14.6364H17.7273C18.1539 14.6445 18.5698 14.5024 18.9022 14.2348C19.2346 13.9672 19.4623 13.5913 19.5455 13.1727L21 5.54545H5.54545"
+                stroke="#FF800B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="header__btn-search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.7556 18.5773L14.0682 12.8899C15.1698 11.5291 15.8331 9.79989 15.8331 7.91659C15.8331 3.55164 12.2815 0 7.91655 0C3.5516 0 0 3.5516 0 7.91655C0 12.2815 3.55164 15.8331 7.91659 15.8331C9.79989 15.8331 11.5291 15.1698 12.8899 14.0682L18.5773 19.7556C18.7398 19.9181 18.9531 19.9998 19.1665 19.9998C19.3798 19.9998 19.5931 19.9181 19.7556 19.7556C20.0815 19.4298 20.0815 18.9031 19.7556 18.5773ZM7.91659 14.1665C4.46995 14.1665 1.66666 11.3632 1.66666 7.91655C1.66666 4.46991 4.46995 1.66662 7.91659 1.66662C11.3632 1.66662 14.1665 4.46991 14.1665 7.91655C14.1665 11.3632 11.3632 14.1665 7.91659 14.1665Z"
+                fill="#FF800B" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <header id="home" class="header">
+    <div class="container header__wrapper">
+      <h1 class="header__title">
+        <span>Organic</span> Healthy Fresh Food For You<span>.</span>
+      </h1>
+      <p class="header__text">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+      </p>
+      <button class="header__btn button">
+        Order Now
+        <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.4896 6.89076L8.48795 6.50716C8.48795 4.91289 8.58131 3.45943 8.72195 2.51193L8.84515 1.92273C8.9137 1.61068 9.00381 1.25537 9.09776 1.07399C9.44167 0.410501 10.1141 0 10.8338 0H10.8965C11.3656 0.0155131 12.3513 0.427208 12.3513 0.441527C13.9372 1.10698 16.997 3.11536 18.4102 4.54717L18.8208 4.97704C18.9284 5.09354 19.0492 5.23142 19.1242 5.3389C19.3747 5.67064 19.5 6.08115 19.5 6.49165C19.5 6.94988 19.3594 7.3759 19.0935 7.72434L18.6715 8.17968L18.577 8.27685C17.2948 9.66706 13.9467 11.9403 12.1953 12.636L11.9308 12.7374C11.6126 12.8514 11.1668 12.9875 10.8965 13C10.5526 13 10.224 12.92 9.91084 12.7625C9.51967 12.5418 9.20767 12.1933 9.03513 11.7828C8.92522 11.4988 8.75268 10.6456 8.75268 10.6301C8.5945 9.76978 8.50278 8.41228 8.4896 6.89076ZM0 6.49952C0 5.59141 0.729173 4.85513 1.62853 4.85513L5.63602 5.20955C6.34156 5.20955 6.91355 5.78711 6.91355 6.49952C6.91355 7.21313 6.34156 7.7895 5.63602 7.7895L1.62853 8.14391C0.729173 8.14391 0 7.40764 0 6.49952Z"
+            fill="white" />
+        </svg>
+
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="categories" class="product">
+      <div class="container">
+        <h2 class="title product__title">
+          Featured Product
+        </h2>
+        <ul class="product__list">
+          <li class="product__item">
+            <img class="item__img" src="images/products/banan.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Ripe Yellow Banana
+              </h2>
+              <span class="item__price">
+                $2.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/grapes.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Red Pomegranate
+              </h2>
+              <span class="item__price">
+                $3.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/orange.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Sweet Orange
+              </h2>
+              <span class="item__price">
+                $2.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/avocado.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Tasty Avocado
+              </h2>
+              <span class="item__price">
+                $3.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/red-apple.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Ripe Red Apples
+              </h2>
+              <span class="item__price">
+                $5.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/green-apple.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Ripe Green Apple
+              </h2>
+              <span class="item__price">
+                $1.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/strawberry.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Sweet Strawberry
+              </h2>
+              <span class="item__price">
+                $1.89
+              </span>
+            </div>
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+          <li class="product__item">
+            <img class="item__img" src="images/products/waterlon.png" alt="product photo">
+            <div class="item__box-first">
+              <h2 class="item__subtitle">
+                Tasty Watermelon
+              </h2>
+              <span class="item__price">
+                $6.89
+              </span>
+            </div>
+
+            <div class="item__box-second">
+              <span class="item__weight">500g</span>
+              <button class="button item__btn">
+                Buy
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container description__container">
+        <div class="description__photo-inner">
+          <div class="description__photo-box">
+            <img src="images/descr/1.png" alt="content photo">
+            <img src="images/descr/2.png" alt="content photo">
+          </div>
+          <div class="description__photo-box">
+            <img src="images/descr/3.png" alt="content photo">
+            <img src="images/descr/4.png" alt="content photo">
+          </div>
+        </div>
+        <div class="description__content">
+          <div class="description__title title">
+            How it Works
+          </div>
+          <p class="description__text">
+            Lorem Ipsum is simply dummy text of the printi and typesetting industry. Lorem Ipsum has been the
+            industry's
+          </p>
+          <ul class="description__list">
+            <li class="description__item">
+              <h3 class="description__subtitle">Choose Product</h3>
+              <span class="description__comment">Lorem Ipsum is simply dummy text of the printi</span>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">Do Payment</h3>
+              <span class="description__comment">Lorem Ipsum is simply dummy text of the printi</span>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">Confirmation Payment</h3>
+              <span class="description__comment">Lorem Ipsum is simply dummy text of the printi</span>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">Order Shipped</h3>
+              <span class="description__comment">Lorem Ipsum is simply dummy text of the printi</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about__container">
+        <div class="about__content">
+          <h2 class="about__title title">
+            About Us
+          </h2>
+          <p class="about__text">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alterationThere are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration
+          </p>
+          <div class="about__button">
+            <a class="button" href="#">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="about__image">
+          <img src="images/about-fruits.png" alt="fruits image">
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container reviews__container">
+        <h2 class="title reviews__title">
+          Customer Review
+        </h2>
+        <div class="reviews__items">
+          <div class="reviews__item">
+            <blockquote>
+              We help our clients make realize their most important business We help our clients make realize their We
+              help our clients make realize their most important business We help our clients make realize
+            </blockquote>
+            <div class="reviews__author">
+              <img src="images/kevin-andrew.png" alt="customer photo">
+              <cite>
+                Kevin Andrew
+                <br>
+                <span>Happy Customers</span>
+              </cite>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <blockquote>
+              Weaseling out of things is important to learn; it’s what separates us from the animals… except the weasel.
+            </blockquote>
+            <div class="reviews__author">
+              <img src="images/icons/homer.png" alt="customer photo">
+              <cite>
+                Homer J. Simpson
+                <br>
+                <span>Happy Customers</span>
+              </cite>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <blockquote>
+              These guys have the highest quality product. Last time I tasted such cool bananas in Congo. Recommend
+              them!
+            </blockquote>
+            <div class="reviews__author">
+              <img src="images/icons/businessman.png" alt="customer photo">
+              <cite>
+                Jammie Barns
+                <br>
+                <span>Fruit Dealer</span>
+              </cite>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item reviews__item-second">
+        </div>
+        <div class="reviews__item reviews__item-third">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top-item">
+          <h3 class="footer__top-title">
+            Fruity
+          </h3>
+          <p class="footer__text">
+            Lorem Ipsum is simply dummy typesetting industry. Lorem Ipsum has been the industry's standard
+          </p>
+          <ul class="footer__socials">
+            <li class="footer__facebook">
+              <a href="#">
+                <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9998 3.60089L10.7026 3.60179C8.90141 3.60179 8.55269 4.36264 8.55269 5.47922V7.94121H12.8484L12.8469 11.7975H8.55269V21.693H4.07207V11.7975H0.326172V7.94121H4.07207V5.09756C4.07207 1.79717 6.34015 0 9.65237 0L13.0001 0.00473415L12.9998 3.60089Z"
+                    fill="#545761" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__twitter">
+              <a href="#">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#545761" />
+                  <path
+                    d="M18.7862 9.64046C18.7127 9.55422 18.5945 9.5318 18.4979 9.58579C18.3987 9.6342 18.2961 9.67404 18.1909 9.70494C18.3549 9.4797 18.4787 9.22387 18.5561 8.95032C18.5901 8.81267 18.5138 8.67142 18.3856 8.63484C18.3171 8.61531 18.2441 8.62921 18.1861 8.67283C17.8209 8.88504 17.4326 9.04807 17.0302 9.1582C16.2017 8.31869 14.9397 8.21405 14.001 8.90702C13.2779 9.43192 12.8798 10.3391 12.9632 11.272C11.3957 11.1286 9.95352 10.2946 8.97941 8.96838C8.92936 8.90339 8.85365 8.86761 8.77521 8.87193C8.69567 8.87706 8.62369 8.92421 8.58304 8.99778C8.25244 9.57798 8.15666 10.2779 8.31784 10.9356C8.40049 11.2736 8.54217 11.5916 8.73535 11.8729C8.64833 11.8271 8.56644 11.7709 8.49129 11.7052C8.38826 11.6155 8.23699 11.6324 8.15339 11.743C8.11871 11.789 8.09975 11.8463 8.09972 11.9054C8.114 12.8596 8.60207 13.7329 9.37962 14.1955C9.27472 14.1817 9.17117 14.1579 9.07021 14.1243C8.94317 14.0833 8.80919 14.1606 8.77098 14.297C8.75431 14.3565 8.75821 14.4205 8.78194 14.4771C9.11942 15.2887 9.79409 15.8815 10.6019 16.0761C9.83227 16.5423 8.94607 16.7381 8.06754 16.6363C7.95363 16.6207 7.84571 16.695 7.81146 16.8127C7.77614 16.9294 7.82236 17.0567 7.92197 17.117C8.99767 17.8032 10.2214 18.1765 11.4724 18.2002C12.6726 18.1955 13.8449 17.8106 14.8422 17.0938C16.7462 15.7372 17.9329 13.3016 17.7677 11.1224C18.1748 10.7989 18.5279 10.4037 18.8122 9.95359C18.8706 9.85494 18.8599 9.72646 18.7862 9.64046Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__linkedin">
+              <a href="#">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.995 20.0001V19.9993H21.0003V12.6643C21.0003 9.07593 20.1892 6.31177 15.7844 6.31177C13.6669 6.31177 12.2459 7.41843 11.6658 8.4676H11.6045V6.64677H7.42816V19.9993H11.7769V13.3876C11.7769 11.6468 12.1234 9.96343 14.387 9.96343C16.6174 9.96343 16.6507 11.9501 16.6507 13.4993V20.0001H20.995Z"
+                    fill="#545761" />
+                  <path d="M0.34671 6.64746H4.70071V20H0.34671V6.64746Z" fill="#545761" />
+                  <path
+                    d="M2.52175 0C1.12962 0 0 1.07583 0 2.40167C0 3.7275 1.12962 4.82583 2.52175 4.82583C3.91387 4.82583 5.0435 3.7275 5.0435 2.40167C5.04262 1.07583 3.913 0 2.52175 0V0Z"
+                    fill="#545761" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__youtube">
+              <a href="#">
+                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.1485 1.29856C19.6053 0.352816 19.0157 0.178858 17.8154 0.112705C16.6163 0.0330766 13.6009 0 10.9887 0C8.37139 0 5.35482 0.0330766 4.15695 0.11148C2.95909 0.178858 2.36829 0.351591 1.82005 1.29856C1.26054 2.24308 0.972656 3.86996 0.972656 6.73414C0.972656 6.73659 0.972656 6.73781 0.972656 6.73781C0.972656 6.74026 0.972656 6.74149 0.972656 6.74149V6.74394C0.972656 9.59587 1.26054 11.235 1.82005 12.1697C2.36829 13.1155 2.95783 13.287 4.1557 13.3666C5.35482 13.4352 8.37139 13.4756 10.9887 13.4756C13.6009 13.4756 16.6163 13.4352 17.8166 13.3678C19.017 13.2882 19.6065 13.1167 20.1498 12.1709C20.7143 11.2362 20.9997 9.5971 20.9997 6.74516C20.9997 6.74516 20.9997 6.74149 20.9997 6.73904C20.9997 6.73904 20.9997 6.73659 20.9997 6.73536C20.9997 3.86996 20.7143 2.24308 20.1485 1.29856ZM8.48279 10.413V3.06264L14.7412 6.73781L8.48279 10.413Z"
+                    fill="#545761" />
+                </svg>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top-item hidden">
+          <h3 class="footer__top-subtitle">
+            Community
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__link">
+              <a href="#">
+                For Agents
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                For Seller
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                For Buyer
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Search home
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top-item hidden">
+          <h3 class="footer__top-subtitle">
+            About
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__link">
+              <a href="#">
+                Our Story
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Careers
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                Meet the Team
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top-item hidden">
+          <h3 class="footer__top-subtitle">
+            Contact
+          </h3>
+          <p class="footer__address">
+            29/A Berden Street
+            Simply random text
+            It has roots in a piece of classical latin from 45
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">
+          © 2021 Real State All Rights Reserved.
+        </span>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

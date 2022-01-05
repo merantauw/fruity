@@ -1,6 +1,43 @@
+html{
+  scroll-behavior: smooth;
+}
 
+body {
+  background-color: #fff;
+  @extend %gilroy-regular;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #02283f;
+}
 
-body{
+.title {
+  font-size: 70px;
+  line-height: 82px;
+  @extend %gilroy-bold;
+}
 
+.button {
+  padding: 25px 35px;
+  background-color: #fdb827;
+  border-radius: 30px;
+  border-color: #fdb827;
+  box-shadow: 0 0 40px 40px #fdb827 inset, 0 0 0 0 #fdb827;
+  transition: all 150ms ease-in-out;
+}
 
+.button:hover {
+  box-shadow: 0 0 10px 0 #fdb827 inset, 0 0 10px 4px #fdb827;
+  transform: scale(1.1);
+  background-color: #fff;
+  @extend %title2;
+}
+.button:active {
+  box-shadow: 0 0 4px 0 #fdb827 inset, 0 0 4px 1px #fdb827;
+  transform: scale(0.8);
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
